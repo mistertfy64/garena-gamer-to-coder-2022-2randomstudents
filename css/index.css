@@ -133,6 +133,10 @@ h2 {
   margin: 1%;
 }
 
+.reward-panel__image {
+  margin: 0px;
+}
+
 @media screen and (min-width: 1081px) {
   #reward-panel__container {
     flex-direction: row;
