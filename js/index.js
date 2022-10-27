@@ -42,6 +42,7 @@ function initialize() {
 async function startOpeningAnimation() {
 	// add a click listener in case user doesn't want to see it
 	document.getElementById("content__main").style.display = "none";
+	document.body.style.overflowY = "hidden";
 	document
 		.getElementById("content__splash-screen__wrapper")
 		.addEventListener("click", skipOpeningAnimation);
@@ -122,6 +123,8 @@ async function finishOpeningAnimation() {
 			splash.style.display = "none";
 		}
 		splashScreenSkipped = true;
+		// TODO: fix?
+		document.body.style.overflowY = "scroll";
 	}
 }
 
