@@ -105,9 +105,9 @@ function skipOpeningAnimation() {
 // remove animation so it doesn't break stuff
 async function finishOpeningAnimation() {
 	if (!splashScreenCurrentlyDisappearing) {
-		document.getElementById("content__main").style.display = "block";
 		splashScreenCurrentlyDisappearing = true;
 		var splash = document.getElementById("content__splash-screen__wrapper");
+		document.getElementById("content__main").style.display = "block";
 		//check if the browser supports the animation
 		if (splash.style.opacity != undefined) {
 			for (let i = 100; i >= 0; i--) {

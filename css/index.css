@@ -27,6 +27,7 @@ body {
   font-size: 32px;
   user-select: none;
   position: absolute;
+  z-index: 5;
 }
 
 #blockmango-logo {
@@ -36,7 +37,7 @@ body {
 
 #content__call-to-action-zone {
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
 }
 
 #call-to-action-button {
