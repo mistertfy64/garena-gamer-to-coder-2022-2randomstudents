@@ -42,7 +42,7 @@ body {
 
 #call-to-action-button {
   background-color: #296ed4;
-  border: #3179f1 solid 4px;
+  border: #0b66ff solid 4px;
   border-radius: 4px;
   color: #ffffff;
   width: 256px;
@@ -51,6 +51,11 @@ body {
   font-size: 32px;
   font-family: "Roboto Mono", "monospace";
 }
+
+/* #call-to-action-button:hover {
+  background-color: #498cff;
+  border: #316fcc solid 4px;
+} */
 
 #content__call-to-action-zone__banner {
   background-image: url("https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-banner/01.png");
