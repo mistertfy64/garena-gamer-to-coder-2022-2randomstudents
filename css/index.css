@@ -23,11 +23,18 @@
   user-select: none;
 }
 
+#blockmango-logo {
+  width: 30%;
+  height: auto;
+}
+
 #content__call-to-action-zone {
   width: 100vw;
-  height: 40vh;
+  height: 60vh;
   
 }
+
+
 
 #content__call-to-action-zone__banner {
   background-image: url("https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-banner/01.png");
@@ -35,10 +42,11 @@
   background-position: center top;
   width: 100%;
   height: 100%;
-  filter: blur(4px);
+  filter: blur(4px) brightness(60%);
 }
 
 #content__call-to-action-zone__banner-wrapper {
   width: 100%;
   height: 100%;
+  z-index:2;
 }
