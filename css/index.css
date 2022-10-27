@@ -8,4 +8,5 @@
   color: #ffffff;
   flex-direction: column;
   font-size: 32px;
+  user-select: none;
 }

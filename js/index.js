@@ -6,7 +6,6 @@ const SPLASH_SCREEN_MESSAGES = [
 	"A realm comparable to paradise.",
 	"The new realm would be the new paradise.",
 	"Maybe you want to join in on the competition?",
-	"Roblox/Minecraft knock off (not really) (maybe) (probably not)",
 ];
 
 const SPLASH_SCREEN_CORRUPTED_CHARACTERS = [
