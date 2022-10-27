@@ -41,6 +41,7 @@ function initialize() {
 // animation open
 async function startOpeningAnimation() {
 	// add a click listener in case user doesn't want to see it
+	document.getElementById("content__main").style.display = "none";
 	document
 		.getElementById("content__splash-screen__wrapper")
 		.addEventListener("click", skipOpeningAnimation);
@@ -104,6 +105,7 @@ function skipOpeningAnimation() {
 // remove animation so it doesn't break stuff
 async function finishOpeningAnimation() {
 	if (!splashScreenCurrentlyDisappearing) {
+		document.getElementById("content__main").style.display = "block";
 		splashScreenCurrentlyDisappearing = true;
 		var splash = document.getElementById("content__splash-screen__wrapper");
 		//check if the browser supports the animation
