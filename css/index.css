@@ -98,11 +98,20 @@ body {
 #reward-box--rank-1 {
   background-color: #dbbe3dc2;
 }
+
+#reward-box--rank-2 {
+  background-color: #c4c4c4;
+}
+
+#reward-box--rank-3 {
+  background-color: #df8908c4;
+}
+
 .reward__text-currency-code {
   font-size: 12px;
 }
 .reward-text--money-amount {
-  font-size: 48px;
+  font-size: 28px;
 }
 
 .content__about--section h1 {
@@ -110,4 +119,32 @@ body {
   font-size: 28px;
   color: white;
   font-weight: normal;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  font-weight: normal;
+}
+
+.reward-panel--big {
+  width: 32%;
+  margin: 1%;
+}
+
+@media screen and (min-width: 1081px) {
+  #reward-panel__container {
+    flex-direction: row;
+  }
+
+  
+}
+
+@media screen and (max-width: 1080px) {
+  #reward-panel__container {
+    flex-direction: column;
+  }#reward-panel__container .reward-panel--big {
+    width: 100%;
+  }
 }
