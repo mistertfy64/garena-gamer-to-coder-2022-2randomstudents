@@ -17,33 +17,66 @@
 
 <body>
   <div id="content-container">
-    <div id="content__splash-screen__wrapper">
-      <div> </div>
-      <div id="text__main-story"></div>
-      <div class="text--secondary">Click anywhere to skip...</div>
+    <div>
+      <div id="content__splash-screen__wrapper">
+        <div> </div>
+        <div id="text__main-story"></div>
+        <div class="text--secondary">Click anywhere to skip...</div>
+      </div>
     </div>
-  </div>
-  <div id="content__call-to-action-zone">
-    <div id="content__call-to-action-zone__banner-wrapper">
-      <div style="position:absolute;z-index:3;">
-        <div style="text-align:center;font-size:32px;color:#fefefe">
-          <br>
-          The <br> Ultimate <br>
-          <img id="blockmango-logo"
-            src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-logo/01.png" style="z-index:3;">
-          <br>
-          World-Building Competition
-          <br>
-          <div style="font-size:16px;">
-            Build the new "Paradise" to win amazing prizes and possibly the THB1,000,000,000 grand prize!
+    <div id="content__call-to-action-zone">
+      <div id="content__call-to-action-zone__banner-wrapper">
+        <div style="position:absolute;z-index:3;">
+          <div style="text-align:center;font-size:32px;color:#fefefe">
+            <br>
+            The <br> Ultimate <br>
+            <img id="blockmango-logo"
+              src="https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-logo/01.png"
+              style="z-index:3;">
+            <br>
+            World-Building Competition
+            <br>
+            <div style="font-size:16px;">
+              Build the new "Paradise" to win amazing prizes and be the next BlockMan Go's face for paradise along a
+              THB1,000,000,000 reward!
+            </div>
+            <br>
+            <button id="call-to-action-button">
+              Register
+            </button>
+          </div>
+        </div>
+        <div id="content__call-to-action-zone__banner">
+          <!-- The banner-->
+        </div>
+      </div>
+    </div>
+    <div id="content__about-container">
+      <div class="content__about--section">
+        <h1>
+          What is this?
+        </h1>
+        Its the largest virtual world building competition! Build the new paradise, and be the new paradise!
+      </div>
+      <br>
+      <div class="content__about--section">
+        <h1>
+          What can I win?
+        </h1>
+        The BlockManGo Gods will judge your project.
+        To prevent "really-straight-to-the-point" submissions, the criteria will be kept secret.
+        <div style="float:right;">
+          <div class="reward-box" id="reward-box--rank-1">
+            <div>
+              <span class="reward-text-currency-code">THB</span><span class="reward-text--money-amount"
+                id="reward--first-place-text">1,000,000,000</span>
+            </div>
           </div>
         </div>
       </div>
-      <div id="content__call-to-action-zone__banner">
-      </div>
     </div>
   </div>
-
+  </div>
 
   <script src="./js/index.js"></script>
   <script>initialize();</script>
