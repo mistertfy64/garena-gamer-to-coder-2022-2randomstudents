@@ -107,6 +107,7 @@ body {
 
 .content__about--section h1 {
   margin: 0;
+  font-size: 28px;
   color: white;
   font-weight: normal;
 }
