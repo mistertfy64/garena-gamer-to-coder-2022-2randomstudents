@@ -131,11 +131,9 @@ h2 {
 .reward-panel--big {
   width: 32%;
   margin: 1%;
+  padding: 8px;
 }
 
-.reward-panel__image {
-  margin: 0px;
-}
 
 @media screen and (min-width: 1081px) {
   #reward-panel__container {
