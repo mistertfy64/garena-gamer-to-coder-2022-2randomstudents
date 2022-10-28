@@ -1,3 +1,20 @@
+@keyframes slow-scrolling {
+  0% {
+    background-position-y: 0;
+  }
+  80% {
+    background-position-y: 100%;
+  }
+  100% {
+    background-position-y: 0;
+  }
+}
+
+body {
+  overflow-x:hidden;
+}
+
+
 #content__splash-screen__wrapper {
   width: 100vw;
   height:100vh;
@@ -8,4 +25,130 @@
   color: #ffffff;
   flex-direction: column;
   font-size: 32px;
+  user-select: none;
+  position: absolute;
+  z-index: 5;
+}
+
+#blockmango-logo {
+  width: 30%;
+  height: auto;
+}
+
+#content__call-to-action-zone {
+  width: 100vw;
+  height: 60vh;
+}
+
+#call-to-action-button {
+  background-color: #296ed4;
+  border: #0b66ff solid 4px;
+  border-radius: 4px;
+  color: #ffffff;
+  width: 256px;
+  height: 64px;
+  padding: 8px;
+  font-size: 32px;
+  font-family: "Roboto Mono", "monospace";
+}
+
+/* #call-to-action-button:hover {
+  background-color: #498cff;
+  border: #316fcc solid 4px;
+} */
+
+#content__call-to-action-zone__banner {
+  background-image: url("https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-banner/01.png");
+  animation: slow-scrolling 36s infinite;
+  background-position: center top;
+  width: 100%;
+  height: 100%;
+  filter: blur(4px) brightness(60%);
+}
+
+#content__call-to-action-zone__banner-wrapper {
+  width: 100%;
+  height: 100%;
+  z-index:2;
+}
+
+.content__about--section {
+  color: white;
+}
+
+#content__about-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.reward-box {
+  width: fit-content;
+  text-align: right;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.reward-box .reward-box-emblem {
+  border-left: 48px solid transparent;
+  border-right: 48px solid transparent;
+  border-top: 96px solid #dbbe3dd3;
+}
+
+#reward-box--rank-1 {
+  background-color: #dbbe3dc2;
+}
+
+#reward-box--rank-2 {
+  background-color: #b3b3b3;
+}
+
+#reward-box--rank-3 {
+  background-color: #df8908c4;
+}
+
+.reward__text-currency-code {
+  font-size: 12px;
+}
+.reward-text--money-amount {
+  font-size: 28px;
+}
+
+.content__about--section h1 {
+  margin: 0;
+  font-size: 28px;
+  color: white;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  font-weight: normal;
+}
+
+.reward-panel--big {
+  width: 32%;
+  margin: 1%;
+}
+
+.reward-panel__image {
+  margin: 0px;
+}
+
+@media screen and (min-width: 1081px) {
+  #reward-panel__container {
+    flex-direction: row;
+  }
+
+  
+}
+
+@media screen and (max-width: 1080px) {
+  #reward-panel__container {
+    flex-direction: column;
+  }#reward-panel__container .reward-panel--big {
+    width: 100%;
+  }
 }

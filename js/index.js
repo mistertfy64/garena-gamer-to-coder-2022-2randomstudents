@@ -6,7 +6,6 @@ const SPLASH_SCREEN_MESSAGES = [
 	"A realm comparable to paradise.",
 	"The new realm would be the new paradise.",
 	"Maybe you want to join in on the competition?",
-	"Roblox/Minecraft knock off (not really) (maybe) (probably not)",
 ];
 
 const SPLASH_SCREEN_CORRUPTED_CHARACTERS = [
@@ -42,6 +41,8 @@ function initialize() {
 // animation open
 async function startOpeningAnimation() {
 	// add a click listener in case user doesn't want to see it
+	document.getElementById("content__main").style.display = "none";
+	document.body.style.overflowY = "hidden";
 	document
 		.getElementById("content__splash-screen__wrapper")
 		.addEventListener("click", skipOpeningAnimation);
@@ -107,6 +108,7 @@ async function finishOpeningAnimation() {
 	if (!splashScreenCurrentlyDisappearing) {
 		splashScreenCurrentlyDisappearing = true;
 		var splash = document.getElementById("content__splash-screen__wrapper");
+		document.getElementById("content__main").style.display = "block";
 		//check if the browser supports the animation
 		if (splash.style.opacity != undefined) {
 			for (let i = 100; i >= 0; i--) {
@@ -121,6 +123,8 @@ async function finishOpeningAnimation() {
 			splash.style.display = "none";
 		}
 		splashScreenSkipped = true;
+		// TODO: fix?
+		document.body.style.overflowY = "scroll";
 	}
 }
 
