@@ -158,3 +158,22 @@ function calibrateScreen() {
 			.clientHeight
 	}px`;
 }
+
+// wait, why is this here?
+window.onresize = function () {
+	calibrateScreen();
+};
+
+function calibrateScreen() {
+	let size = (window.outerWidth / window.innerWidth) * 100;
+	document.getElementById(
+		"content__call-to-action-zone__banner"
+	).style.height = `${Math.max(100, size)}%`;
+
+	document.getElementById(
+		"content__call-to-action-zone__wrapper"
+	).style.height = `${
+		document.getElementById("content__call-to-action-zone__banner")
+			.clientHeight
+	}px`;
+}
