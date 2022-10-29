@@ -1,0 +1,164 @@
+:root {
+  --height-top-navigation-bar-height: 2.5vh; 
+}
+
+@keyframes header-slide-in {
+  0% {
+    top: calc(-1*var(--height-top-navigation-bar-height));
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes header-slide-out {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: calc(-1*var(--height-top-navigation-bar-height));
+  }
+}
+
+body {
+  margin: 0px;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #222222;
+  overflow-x: hidden;
+}
+
+.text--secondary {
+  color: #ffffff;
+  opacity: 0.5; 
+  font-size: 16px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#header {
+  width: fit-content;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+}
+
+#header__content {
+  z-index: 1000;
+  color: #ffffff;
+  height: var(--height-top-navigation-bar-height);
+  background-color: #151515;
+  width: 100vw;
+}
+
+#header__ribbon__container #header__ribbon {
+  width: 96px;
+  height: 32px;
+  background-color: #151515;
+  display: block;
+z-index: 1000;
+left: 80%;
+
+
+}
+
+#header__content__link__container {
+display:flex;
+flex-direction: row;
+justify-content: center;
+}
+
+#header__content__link__container .header__content__link {
+  margin: 0 1%;
+  width: 10%;
+  text-align: center;
+}
+
+#header__content__link__container .header__content__link--active {
+  background-color: #03925e;
+}
+
+#header__content__link__container a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+#header__ribbon__text {
+  color: #ffffff;
+font-size: 42px;
+display: flex;
+align-items: flex-end;
+padding-bottom: 4px;
+justify-content: center;
+width: 100%;
+height:75%;
+padding-top: 16px;
+user-select: none;
+}
+
+#header__ribbon__container {
+  display:flex;
+flex-direction: row;
+justify-content: center;
+position: absolute;
+text-align: center;
+}
+
+#header__ribbon {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #151515;
+}
+
+/* #header__ribbon__text:hover{
+  padding-top: 0px;
+  transition-duration: 1s;
+} */
+
+.header-animation-slide-in {
+  animation-name: header-slide-in;
+  animation-duration: 100ms;
+  animation-fill-mode:forwards;
+}
+
+.header-animation-slide-out {
+  animation-name: header-slide-out;
+  animation-duration: 100ms;
+  animation-fill-mode:forwards;
+}
+
+#footer {
+  width: 100vw;
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+#footer #footer__disclaimer-text
+{
+  text-align: center;
+  font-size: 16px;
+}
+
+/* scroll bar width */
+/* ::-webkit-scrollbar {
+  width: 10px;
+  position: absolute;
+}
+
+::-webkit-scrollbar-track{
+  background: #444444;
+  box-shadow: inset 0 0 5px grey; 
+}
+
+::-webkit-scrollbar-thumb{
+  background: #0f0f0f;
+  
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #000000;
+} */
