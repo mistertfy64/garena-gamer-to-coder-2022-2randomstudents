@@ -29,7 +29,13 @@ function createSubmissionBox(data) {
 	let submissionBox = document.createElement("div");
 	submissionBox.innerHTML = `
   <div class="submission-box">
-    ${JSON.stringify(data.no)}
+    <h3>
+    Submission #${JSON.stringify(data.no)}
+    
+    <h3/><h1>${JSON.stringify(
+		data.name
+	)}</h1><img class="icon" src=${JSON.stringify(data.icon)}>
+
   </div>
   `;
 	document
