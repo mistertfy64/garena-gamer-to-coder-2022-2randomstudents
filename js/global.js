@@ -47,6 +47,10 @@ async function showHeader() {
 		.classList.remove("header-animation-slide-in");
 }
 
+function cleanString(string) {
+	return string.replace(/^"(.+(?="$))"$/, "$1");
+}
+
 // IMPORTANT: USE THIS WITH AWAIT!!!!
 function wait(time) {
 	return new Promise((resolve) => setTimeout(resolve, time));

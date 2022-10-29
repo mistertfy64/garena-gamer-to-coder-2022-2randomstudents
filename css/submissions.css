@@ -33,3 +33,7 @@
   width: 150px;
   height: 150px;
 }
+
+.submission-box__tags {
+  padding: 0 8px;
+}
