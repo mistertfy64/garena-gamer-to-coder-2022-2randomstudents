@@ -3,4 +3,7 @@
 ONLY FOR USE BY mistertfy64 and EpicCatto
 
 ## Checklist
-[] Fix zooming
+[X] Fix zooming
+[ ] Make judge page look nicer
+[ ] Make individual submission page look nicer
+ 
