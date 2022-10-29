@@ -58,7 +58,9 @@ body {
 } */
 
 #content__call-to-action-zone__banner {
-  background-image: url("https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-banner/01.png");
+  background: url("https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-banner/01.png")  no-repeat center center fixed;
+  /* TODO: add support for other browsers */
+  background-size: cover;
   animation: slow-scrolling 36s infinite;
   background-position: center top;
   width: 100%;
