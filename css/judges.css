@@ -1,0 +1,49 @@
+
+#content__main {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content-container {
+  margin-top:15vh;
+}
+
+.content__judge-information {
+  display:flex;
+  width: 80%;
+  height: 50%;
+  justify-content: space-between;
+}
+
+.content__judge-information .content__judge-information--specific {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+#content__judge-information--select {
+  background-color: #444444;
+  color: #ffffff;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#judge-image > img {
+  z-index: 7;
+  width: 50px;
+}
+
+.judge-select-box {
+  width: 50px;
+  height: 50px;
+  border: 4px #888888 solid;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+#judge-image--main > img {
+z-index: 8;
+  height: 300px;
+}
