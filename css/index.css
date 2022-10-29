@@ -27,7 +27,11 @@ body {
   font-size: 32px;
   user-select: none;
   position: absolute;
+<<<<<<< HEAD
   z-index: 5;
+=======
+  z-index: 2000;
+>>>>>>> parent of 343c9f8 (Merge branch 'EpicCatto/development' into mistertfy64/development)
 }
 
 #blockmango-logo {
@@ -58,7 +62,13 @@ body {
 } */
 
 #content__call-to-action-zone__banner {
+<<<<<<< HEAD
   background-image: url("https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-banner/01.png");
+=======
+  background: url("https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-banner/01.png")  no-repeat center center fixed;
+  /* TODO: add support for other browsers */
+  background-size: cover;
+>>>>>>> parent of 343c9f8 (Merge branch 'EpicCatto/development' into mistertfy64/development)
   animation: slow-scrolling 36s infinite;
   background-position: center top;
   width: 100%;
@@ -131,6 +141,7 @@ h2 {
 .reward-panel--big {
   width: 32%;
   margin: 1%;
+<<<<<<< HEAD
 }
 
 .reward-panel__image {
@@ -151,4 +162,130 @@ h2 {
   }#reward-panel__container .reward-panel--big {
     width: 100%;
   }
+=======
+  padding: 8px;
+}
+
+.reward-panel--small {
+  width: 47.5%;
+  padding: 8px;
+  background-color: #8282f5;
+}
+
+
+.reward-panel--small .reward-panel--small__text {
+  display:flex;
+  justify-content: space-between;
+}
+
+
+
+.reward-panel--small .reward-panel--small__text > h2 {
+  font-size: 16px;
+
+}
+
+.reward-panel--small .reward-panel--small__text > .reward-text--money-amount {
+  font-size: 24px;
+}
+
+
+/* 1081px or MORE */
+@media screen and (min-width: 1081px) {
+  #reward-panel--big__container {
+    flex-direction: row;
+  }
+
+  #reward-panel--small__container {
+    flex-direction: row;
+    
+  }
+
+  .reward-panel--small__text {
+    flex-direction: row;
+  }
+  .reward-panel--small__text > h2{
+    text-align: left;  width: 25%;
+  }
+
+  
+  .reward-panel--small .reward__text--small {
+    width: 75%;
+    text-align: right;
+  
+  }
+  .reward-panel--small:nth-of-type(1){
+    margin-left: 1%;
+    margin-right: 0.5%;
+
+  }
+
+  .reward-panel--small:nth-of-type(2){
+    margin-right: 1%;
+    margin-left: 0.5%;
+    font-size:20px;
+  }
+
+  
+}
+
+/* 1080px or LESS */
+@media screen and (max-width: 1080px) {
+  #reward-panel--big__container {
+    flex-direction: column;
+  }
+
+  #reward-panel--small__container {
+    flex-direction: column;
+  }
+
+  #reward-panel--big__container .reward-panel--big {
+    width: 100%;
+  }
+
+  .reward-panel--small__text {
+    flex-direction: column;
+    
+  }
+  .reward-panel--small__text > h2{
+    text-align: center;
+  }
+
+  .reward__text--small {
+    text-align:center; 
+    /* margin: 8px; */
+    width:100%;
+  }
+
+  /* #reward-panel--small__container #reward-panel--small__wrapper  {
+    flex-direction: row;
+  } */
+
+  #reward-panel--small__container {
+    flex-direction: column;
+  }
+
+  #reward-panel--small__wrapper {
+    flex-direction: column;
+  }
+
+  .reward-panel--small {
+    width: 100%;
+    padding: 8px;
+    /* flex-direction:column; */
+  }
+
+  .reward-panel--small:nth-of-type(1){
+    margin-top: 4px;
+    margin-left: 1%;
+  }
+
+  .reward-panel--small:nth-of-type(2){
+    margin-top: 8px;
+    margin-left: 1%;
+    
+  }
+
+
+>>>>>>> parent of 343c9f8 (Merge branch 'EpicCatto/development' into mistertfy64/development)
 }
