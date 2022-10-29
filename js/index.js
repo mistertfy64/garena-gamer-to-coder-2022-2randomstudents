@@ -35,15 +35,23 @@ let splashScreenCurrentlyDisappearing = false;
 // This is used when the website was VISITED
 // TODO: Sometimes it wont resize
 function initialize() {
+	let parameters = new URL(document.location).searchParams;
+	let ignoreOpeningAnimation = parameters.get("ignoreOpeningAnimation");
 	// start the animation or something
-	startOpeningAnimation();
+	if (!ignoreOpeningAnimation) {
+		startOpeningAnimation();
+	} else {
+		finishOpeningAnimation();
+	}
 	calibrateScreen();
 }
 
 // animation open
 async function startOpeningAnimation() {
 	// add a click listener in case user doesn't want to see it
-	document.getElementById("content__main").style.display = "none";
+	document.getElementById("content__splash-screen__wrapper").style.display =
+		"flex";
+	// document.getElementById("content__main").style.display = "none";
 	document
 		.getElementById("content__splash-screen__wrapper")
 		.addEventListener("click", skipOpeningAnimation);
