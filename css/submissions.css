@@ -1,0 +1,22 @@
+
+#content__main {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#submission-box__container {
+  display:flex;
+  justify-content: center;
+  width: 80%;
+  flex-wrap:wrap;
+}
+
+
+.submission-box {
+  background-color: #444444;
+  color: #ffffff;
+  width: 200px;
+  height: 400px;
+  margin: 8px;
+}
