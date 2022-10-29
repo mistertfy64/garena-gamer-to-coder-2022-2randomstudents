@@ -160,6 +160,9 @@ h2 {
   font-size: 24px;
 }
 
+#text__main-story {
+  text-align: center;
+}
 
 /* 1081px or MORE */
 @media screen and (min-width: 1081px) {
