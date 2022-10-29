@@ -136,14 +136,6 @@ h2 {
   margin: 1%;
   padding: 8px;
 }
-    /* aos animation delay */
-.reward-panel--big:nth-child(2) {
-  transition-delay: 300ms;
-}
-  
-.reward-panel--big:nth-child(1) {
-    transition-delay: 600ms;
-  }
 
 .reward-panel--small {
   width: 47.5%;
@@ -151,13 +143,6 @@ h2 {
   background-color: #8282f5;
 }
 
-.reward-panel--small:nth-child(1) {
-  transition-delay: 800ms;
-}
-
-.reward-panel--small:nth-child(2) {
-  transition-delay: 1000ms;
-}
 
 .reward-panel--small .reward-panel--small__text {
   display:flex;
@@ -263,7 +248,6 @@ h2 {
     padding: 8px;
     /* flex-direction:column; */
   }
-
 
   .reward-panel--small:nth-of-type(1){
     margin-top: 4px;
