@@ -21,6 +21,7 @@
 .content__judge-information .content__judge-information--specific {
   background-color: #444444;
   color: #ffffff;
+  height: 60vh;
 }
 
 #content__judge-information--select {
@@ -33,6 +34,7 @@
 #judge-image > img {
   z-index: 7;
   width: 50px;
+
 }
 
 .judge-select-box {
@@ -43,7 +45,21 @@
   margin: 2px;
 }
 
+.judge-select-box > img {
+  z-index: 1;
+}
+
 #judge-image--main > img {
-z-index: 8;
-  height: 300px;
+  z-index: 8;
+  transform: translateX(-45px);
+  width: 300px;
+}
+.content__judge-information--specific > h3 {
+  font-size: 32px;
+  margin: 8px;
+}
+
+.content__judge-information--specific > h4 {
+  font-size: 24px;
+  margin: 8px;
 }
