@@ -26,6 +26,7 @@ async function getAndRenderData() {
 		});
 }
 
+// TODO: Make all tags available w/o hovering over the +x
 function createSubmissionBox(data) {
 	let submissionBox = document.createElement("div");
 	submissionBox.innerHTML = `
