@@ -50,7 +50,10 @@ function createSubmissionBox(data) {
 		cleanString(JSON.stringify(data.description.slice(0, 199))) +
 		(data.description.length >= 200 ? "..." : "")
   }
-      </div>
+      </div><br>
+      <a style="color:#ffffff" href="./submission.html?number=${
+			data.no
+		}">More Information</a>
 
   </div>
   `;
