@@ -40,7 +40,7 @@ body {
 
 #header__content {
   z-index: 1000;
-
+  color: #ffffff;
   height: 30vh;
   background-color: #151515;
   width: 100vw;
