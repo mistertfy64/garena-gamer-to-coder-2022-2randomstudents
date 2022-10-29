@@ -43,10 +43,8 @@ function createSubmissionBox(data) {
 	)}</h1><img class="icon" src=${JSON.stringify(data.icon)}>
       <div >
       <span class="submission-box__tags">${cleanString(
-			JSON.stringify(data.genre[0])
-		)}</span> <span title="Tags: ${data.genre.join(", ")}">${
-		data.genre.length > 1 ? `+${data.genre.length - 1}` : ""
-	}</span>
+			JSON.stringify(data.genre.join(", "))
+		)}</span> 
   <br>
       </div>
 
