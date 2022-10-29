@@ -125,8 +125,3 @@ async function finishOpeningAnimation() {
 		document.body.style.overflowY = "scroll";
 	}
 }
-
-// IMPORTANT: USE THIS WITH AWAIT!!!!
-function wait(time) {
-	return new Promise((resolve) => setTimeout(resolve, time));
-}
