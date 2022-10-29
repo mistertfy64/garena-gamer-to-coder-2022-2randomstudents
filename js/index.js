@@ -36,6 +36,18 @@ let splashScreenCurrentlyDisappearing = false;
 function initialize() {
 	// start the animation or something
 	startOpeningAnimation();
+	let size = (window.outerWidth / window.innerWidth) * 100;
+
+	document.getElementById(
+		"content__call-to-action-zone__banner"
+	).style.height = `${Math.max(100, size)}%`;
+
+	document.getElementById(
+		"content__call-to-action-zone__wrapper"
+	).style.height = `${
+		document.getElementById("content__call-to-action-zone__banner")
+			.clientHeight
+	}px`;
 }
 
 // animation open
@@ -125,3 +137,19 @@ async function finishOpeningAnimation() {
 		document.body.style.overflowY = "scroll";
 	}
 }
+
+// wait, why is this here?
+window.onresize = function () {
+	let size = (window.outerWidth / window.innerWidth) * 100;
+
+	document.getElementById(
+		"content__call-to-action-zone__banner"
+	).style.height = `${Math.max(100, size)}%`;
+
+	document.getElementById(
+		"content__call-to-action-zone__wrapper"
+	).style.height = `${
+		document.getElementById("content__call-to-action-zone__banner")
+			.clientHeight
+	}px`;
+};
