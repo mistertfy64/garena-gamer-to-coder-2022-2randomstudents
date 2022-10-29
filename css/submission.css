@@ -8,8 +8,8 @@
 }
 
 #content-container {
-  position: relative;
-  top: 15vh;
+  margin-top:15vh;
+  min-height: 100vh;
 }
 
 #submission-box__container {

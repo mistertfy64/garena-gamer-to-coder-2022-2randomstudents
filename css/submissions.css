@@ -36,3 +36,7 @@
 .submission-box__tags {
   padding: 0 8px;
 }
+
+#content-container {
+  margin-top:15vh;
+}
