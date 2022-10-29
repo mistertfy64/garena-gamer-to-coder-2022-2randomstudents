@@ -13,7 +13,7 @@ function initialize() {
 }
 
 async function getAndRenderData(target) {
-	fetch("https://gamertocoder.garena.co.th/api/minigames")
+	fetch(`https://gamertocoder.garena.co.th/api/minigame/${target}`)
 		.then((response) => {
 			if (response.status === 200) {
 				return response.json();
@@ -21,12 +21,8 @@ async function getAndRenderData(target) {
 			// handle error
 		})
 		.then((data) => {
-			createSubmissionBox(
-				data.find((submission) => submission["no"] == target)
-			);
-			createSubmissionInformation(
-				data.find((submission) => submission["no"] == target)
-			);
+			createSubmissionBox(data);
+			createSubmissionInformation(data);
 		});
 }
 
