@@ -56,10 +56,14 @@
 }
 .content__judge-information--specific > h3 {
   font-size: 32px;
-  margin: 8px;
+  margin: 8px;font-weight: normal;
 }
 
 .content__judge-information--specific > h4 {
   font-size: 24px;
+  margin: 8px;font-weight: normal;
+}
+
+#content__judge-information__description {
   margin: 8px;
 }
