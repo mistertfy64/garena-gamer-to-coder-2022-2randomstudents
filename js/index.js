@@ -35,6 +35,7 @@ let splashScreenCurrentlyDisappearing = false;
 // This is used when the website was VISITED
 // TODO: Sometimes it wont resize
 function initialize() {
+	document.body.style.overflowY = "hidden";
 	let parameters = new URL(document.location).searchParams;
 	let ignoreOpeningAnimation = parameters.get("ignoreOpeningAnimation");
 	// start the animation or something
