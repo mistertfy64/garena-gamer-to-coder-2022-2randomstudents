@@ -46,7 +46,10 @@ function createSubmissionBox(data) {
 		data.genre.length > 1 ? `+${data.genre.length - 1}` : ""
 	}</span>
   <br>
-  ${cleanString(JSON.stringify(data.description))}
+  ${
+		cleanString(JSON.stringify(data.description.slice(0, 199))) +
+		(data.description.length >= 200 ? "..." : "")
+  }
       </div>
 
   </div>
