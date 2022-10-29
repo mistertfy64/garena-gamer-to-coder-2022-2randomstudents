@@ -1,8 +1,30 @@
+:root {
+  --height-top-navigation-bar-height: 2.5vh; 
+}
+
+@keyframes header-slide-in {
+  0% {
+    top: calc(-1*var(--height-top-navigation-bar-height));
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes header-slide-out {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: calc(-1*var(--height-top-navigation-bar-height));
+  }
+}
 
 body {
   margin: 0px;
   font-family: 'Roboto Mono', monospace;
-  background-color: #222222
+  background-color: #222222;
+  overflow-x: hidden;
 }
 
 .text--secondary {
@@ -15,11 +37,6 @@ body {
   opacity: 0;
 }
 
-<<<<<<< HEAD
-/* scroll bar width */
-::-webkit-scrollbar {
-  width: 10px;
-=======
 #header {
   width: fit-content;
   position: absolute;
@@ -124,7 +141,6 @@ user-select: none;
 /* ::-webkit-scrollbar {
   width: 10px;
   position: absolute;
->>>>>>> parent of 343c9f8 (Merge branch 'EpicCatto/development' into mistertfy64/development)
 }
 
 ::-webkit-scrollbar-track{
@@ -139,8 +155,4 @@ user-select: none;
 
 ::-webkit-scrollbar-thumb:hover{
   background: #000000;
-<<<<<<< HEAD
-}
-=======
 } */
->>>>>>> parent of 343c9f8 (Merge branch 'EpicCatto/development' into mistertfy64/development)

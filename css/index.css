@@ -27,11 +27,7 @@ body {
   font-size: 32px;
   user-select: none;
   position: absolute;
-<<<<<<< HEAD
-  z-index: 5;
-=======
   z-index: 2000;
->>>>>>> parent of 343c9f8 (Merge branch 'EpicCatto/development' into mistertfy64/development)
 }
 
 #blockmango-logo {
@@ -62,13 +58,9 @@ body {
 } */
 
 #content__call-to-action-zone__banner {
-<<<<<<< HEAD
-  background-image: url("https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-banner/01.png");
-=======
   background: url("https://cdngarenanow-a.akamaihd.net/webth/cdn/garena/gamertocoder/bmg-banner/01.png")  no-repeat center center fixed;
   /* TODO: add support for other browsers */
   background-size: cover;
->>>>>>> parent of 343c9f8 (Merge branch 'EpicCatto/development' into mistertfy64/development)
   animation: slow-scrolling 36s infinite;
   background-position: center top;
   width: 100%;
@@ -141,28 +133,6 @@ h2 {
 .reward-panel--big {
   width: 32%;
   margin: 1%;
-<<<<<<< HEAD
-}
-
-.reward-panel__image {
-  margin: 0px;
-}
-
-@media screen and (min-width: 1081px) {
-  #reward-panel__container {
-    flex-direction: row;
-  }
-
-  
-}
-
-@media screen and (max-width: 1080px) {
-  #reward-panel__container {
-    flex-direction: column;
-  }#reward-panel__container .reward-panel--big {
-    width: 100%;
-  }
-=======
   padding: 8px;
 }
 
@@ -287,5 +257,4 @@ h2 {
   }
 
 
->>>>>>> parent of 343c9f8 (Merge branch 'EpicCatto/development' into mistertfy64/development)
 }
