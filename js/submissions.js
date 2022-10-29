@@ -45,6 +45,8 @@ function createSubmissionBox(data) {
 	)}</span> <span title="Tags: ${data.genre.join(", ")}">${
 		data.genre.length > 1 ? `+${data.genre.length - 1}` : ""
 	}</span>
+  <br>
+  ${cleanString(JSON.stringify(data.description))}
       </div>
 
   </div>
