@@ -33,21 +33,11 @@ let splashScreenSkipped = false;
 let splashScreenCurrentlyDisappearing = false;
 
 // This is used when the website was VISITED
+// TODO: Sometimes it wont resize
 function initialize() {
 	// start the animation or something
 	startOpeningAnimation();
-	let size = (window.outerWidth / window.innerWidth) * 100;
-
-	document.getElementById(
-		"content__call-to-action-zone__banner"
-	).style.height = `${Math.max(100, size)}%`;
-
-	document.getElementById(
-		"content__call-to-action-zone__wrapper"
-	).style.height = `${
-		document.getElementById("content__call-to-action-zone__banner")
-			.clientHeight
-	}px`;
+	calibrateScreen();
 }
 
 // animation open
@@ -111,15 +101,18 @@ function restoreCharacter(currentText, index, restoredText) {
 
 function skipOpeningAnimation() {
 	splashScreenSkipped = true;
+	calibrateScreen();
 	finishOpeningAnimation();
 }
 
 // remove animation so it doesn't break stuff
 async function finishOpeningAnimation() {
+	document.getElementById("content__main").style.display = "block";
+	calibrateScreen();
 	if (!splashScreenCurrentlyDisappearing) {
 		splashScreenCurrentlyDisappearing = true;
 		var splash = document.getElementById("content__splash-screen__wrapper");
-		document.getElementById("content__main").style.display = "block";
+
 		//check if the browser supports the animation
 		if (splash.style.opacity != undefined) {
 			for (let i = 100; i >= 0; i--) {
@@ -135,13 +128,17 @@ async function finishOpeningAnimation() {
 		}
 		splashScreenSkipped = true;
 		document.body.style.overflowY = "scroll";
+		calibrateScreen();
 	}
 }
 
 // wait, why is this here?
 window.onresize = function () {
-	let size = (window.outerWidth / window.innerWidth) * 100;
+	calibrateScreen();
+};
 
+function calibrateScreen() {
+	let size = (window.outerWidth / window.innerWidth) * 100;
 	document.getElementById(
 		"content__call-to-action-zone__banner"
 	).style.height = `${Math.max(100, size)}%`;
@@ -152,4 +149,4 @@ window.onresize = function () {
 		document.getElementById("content__call-to-action-zone__banner")
 			.clientHeight
 	}px`;
-};
+}
