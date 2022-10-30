@@ -31,7 +31,7 @@ async function getAndRenderData() {
 function createSubmissionBox(data) {
 	let submissionBox = document.createElement("div");
 	submissionBox.innerHTML = `
-  <div class="submission-box">
+  <div class="submission-box hidden--fade">
   <div>
     <h3>
     Submission #${JSON.stringify(data.no)}
@@ -63,6 +63,7 @@ function createSubmissionBox(data) {
 	document
 		.getElementById("submission-box__container")
 		.appendChild(submissionBox);
+		fetchaos();
 }
 
 function getTagColor(tagName) {
