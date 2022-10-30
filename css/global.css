@@ -147,7 +147,7 @@ text-align: center;
 }
 
 /* scroll bar width */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
   position: absolute;
 }
@@ -155,16 +155,18 @@ text-align: center;
 ::-webkit-scrollbar-track{
   background: #444444;
   box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background: #0f0f0f;
+  background: #2ee7ff;
+  border-radius: 10px;
   
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background: #000000;
-} */
+  background: #0084ff;
+}
 
 /* aos stuff by epiccatto */
 .hidden--fade {
