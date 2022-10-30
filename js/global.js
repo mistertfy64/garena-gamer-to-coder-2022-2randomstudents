@@ -34,7 +34,7 @@ function handleNavSize() {
 		document.getElementById("header__content__text--4").innerText =
 			"Information";
 		document.getElementById("header__ribbon__container").style.display =
-			"none";
+			"flex";
 	}
 }
 
