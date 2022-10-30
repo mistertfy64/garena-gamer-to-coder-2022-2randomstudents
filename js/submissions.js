@@ -20,6 +20,7 @@ async function getAndRenderData() {
 		.then((data) => {
 			console.log(data);
 			data = data;
+			document.getElementById("loading-text").remove();
 			for (let submission of data) {
 				createSubmissionBox(submission);
 			}
@@ -58,6 +59,7 @@ function createSubmissionBox(data) {
 
   </div>
   `;
+
 	document
 		.getElementById("submission-box__container")
 		.appendChild(submissionBox);

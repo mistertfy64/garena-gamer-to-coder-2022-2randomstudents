@@ -8,7 +8,14 @@
 }
 
 #content__main > div > h1 {
-  text-align: left;
+  font-size: 48px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: normal;
+}
+
+#content-container > div > h1 {
+  text-align: center;
   font-size: 48px;
   color: #ffffff;
   margin: 0;
