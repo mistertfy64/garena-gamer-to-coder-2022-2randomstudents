@@ -2,11 +2,9 @@ headerIsVisible = true;
 buttonVisibility = false;
 // document.getElementById("header__content").style.display = "none";
 
-window.onresize = function () {
-  handleNavSize();
-};
+handleNavSize();
 
-window.onload = function () {
+window.onresize = function () {
   handleNavSize();
 };
 
