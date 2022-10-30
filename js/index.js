@@ -52,7 +52,7 @@ async function startOpeningAnimation() {
 	// add a click listener in case user doesn't want to see it
 	document.getElementById("content__splash-screen__wrapper").style.display =
 		"flex";
-	// document.getElementById("content__main").style.display = "none";
+	document.getElementById("content__main").style.display = "none";
 	document
 		.getElementById("content__splash-screen__wrapper")
 		.addEventListener("click", skipOpeningAnimation);
