@@ -1,5 +1,22 @@
-headerIsVisible = false;
-document.getElementById("header__content").style.display = "none";
+headerIsVisible = true;
+buttonVisibility = false;
+// document.getElementById("header__content").style.display = "none";
+
+window.onresize = function () {
+	//chek if the device is a mobile device 
+	if (window.innerWidth < 1100) {
+		hideHeader();
+		headerIsVisible = false;
+		buttonVisibility = true;
+		document.getElementById("header__ribbon__container").style.display = "flex";
+	}else {
+		showHeader();
+		headerIsVisible = true;
+		buttonVisibility = false;
+		document.getElementById("header__ribbon__container").style.display = "none";
+	}
+};
+
 
 function toggleHeaderVisibility() {
 	if (headerIsVisible) {
