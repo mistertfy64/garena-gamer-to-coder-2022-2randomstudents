@@ -11,11 +11,13 @@ window.onresize = function () {
 function handleNavSize() {
   //chek if the device is a mobile device
   if (window.innerWidth < 1100) {
+	if(buttonVisibility)return;
     hideHeader();
     headerIsVisible = false;
     buttonVisibility = true;
     document.getElementById("header__ribbon__container").style.display = "flex";
   } else {
+	if(!buttonVisibility)return;
     showHeader();
     headerIsVisible = true;
     buttonVisibility = false;
