@@ -137,6 +137,7 @@ async function finishOpeningAnimation() {
 		}
 		splashScreenSkipped = true;
 		document.body.style.overflowY = "scroll";
+
 		calibrateScreen();
 	}
 }
