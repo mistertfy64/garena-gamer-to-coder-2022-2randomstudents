@@ -40,7 +40,7 @@ async function getAndRenderData() {
 function createJudgeSelectBox(data, index) {
 	let box = document.createElement("div");
 	box.innerHTML = `<div class="judge-select-box">
-    <img onClick="setDisplayedJudge(${index})" src="${data}" width="50" height="50">
+    <img class="fade-in-image" onClick="setDisplayedJudge(${index})" src="${data}" width="50" height="50">
   </div>`;
 	document
 		.getElementById("content__judge-information--select")
@@ -52,7 +52,7 @@ function setDisplayedJudge(index) {
 		JUDGE_INFORMATION[index].name;
 	document.getElementById(
 		"judge-image--main"
-	).innerHTML = `<img src=${JUDGE_INFORMATION[index].imageURI}>`;
+	).innerHTML = `<img class="fade-in-image-ctr" src=${JUDGE_INFORMATION[index].imageURI}>`;
 	document.getElementById(
 		"content__judge-information__description"
 	).innerText = JUDGE_INFORMATION[index].lore;
