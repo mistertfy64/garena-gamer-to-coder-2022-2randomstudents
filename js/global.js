@@ -32,7 +32,7 @@ function handleNavSize() {
 		document.getElementById("header__content__text--3").innerText =
 			"Submissions";
 		document.getElementById("header__content__text--4").innerText =
-			"Information";
+			"Register";
 		document.getElementById("header__ribbon__container").style.display =
 			"flex";
 	}

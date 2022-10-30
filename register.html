@@ -7,12 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2randomstudents</title>
   <link href="./css/global.css" rel="stylesheet" />
-  <link href="./css/submissions.css" rel="stylesheet" />
+  <link href="./css/index.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
-  <!-- <script defer src="./js/scrollanimation.js"></script> -->
 </head>
 
 <body>
@@ -22,10 +21,10 @@
       <div style="display:flex;justify-content:center">
         <div style="width:90%">
           <div id="header__content__link__container">
-            <div id="header__content__text--1" class="header__content__link"><a
+            <div id="header__content__text--1" class="header__content__link header__content__link--active"><a
                 href="./index.html?ignoreOpeningAnimation=1">Home</a></div>
             <div id="header__content__text--2" class="header__content__link"><a href="./judges.html">Judges</a></div>
-            <div id="header__content__text--3" class="header__content__link  header__content__link--active"><a
+            <div id="header__content__text--3" class="header__content__link"><a
                 href="./submissions.html">Submissions</a></div>
             <div id="header__content__text--4" class="header__content__link"><a href="./register.html">Register</a>
             </div>
@@ -44,23 +43,11 @@
       </div>
     </div>
   </div>
-
-  <br><br>
-
+  </div>
 
   <div id="content-container">
-    <div>
-      <h1>
-        Example Submissions</h1>
-    </div><br>
-    <div id="content__main">
-      <span id="loading-text" style="color:#ffffff;">Loading example submissions...</span>
-      <div id="submission-box__container">
-
-      </div>
 
 
-    </div>
   </div>
   <!-- TODO: Copy and paste this into every file! -->
   <div id="footer">
@@ -112,11 +99,10 @@
     </div>
   </div>
 
-  <script src="./js/submissions.js"></script>
+  <script src="./js/index.js"></script>
   <script src="./js/global.js"></script>
-  <script src="./js/scrollanimation.js"></script>
+  <script defer src="./js/scrollanimation.js"></script>
   <script>initialize();</script>
-
 </body>
 
 </html>
