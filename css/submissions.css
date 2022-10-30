@@ -49,3 +49,10 @@
 #content-container {
   margin-top:2.5vh;
 }
+
+.submission-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px;
+}

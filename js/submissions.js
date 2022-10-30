@@ -31,6 +31,7 @@ function createSubmissionBox(data) {
 	let submissionBox = document.createElement("div");
 	submissionBox.innerHTML = `
   <div class="submission-box">
+  <div>
     <h3>
     Submission #${JSON.stringify(data.no)}
     
@@ -50,10 +51,10 @@ function createSubmissionBox(data) {
 		cleanString(JSON.stringify(data.description.slice(0, 199))) +
 		(data.description.length >= 200 ? "..." : "")
   }
-      </div><br>
+      </div></div><div><br>
       <a style="color:#ffffff" href="./submission.html?number=${
 			data.no
-		}">More Information</a>
+		}">More Information</a></div>
 
   </div>
   `;
