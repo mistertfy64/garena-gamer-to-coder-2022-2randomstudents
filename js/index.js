@@ -52,7 +52,7 @@ async function startOpeningAnimation() {
 	// add a click listener in case user doesn't want to see it
 	document.getElementById("content__splash-screen__wrapper").style.display =
 		"flex";
-	// document.getElementById("content__main").style.display = "none";
+	document.getElementById("content__main").style.display = "none";
 	document
 		.getElementById("content__splash-screen__wrapper")
 		.addEventListener("click", skipOpeningAnimation);
@@ -140,25 +140,6 @@ async function finishOpeningAnimation() {
 
 		calibrateScreen();
 	}
-}
-
-// wait, why is this here?
-window.onresize = function () {
-	calibrateScreen();
-};
-
-function calibrateScreen() {
-	let size = (window.outerWidth / window.innerWidth) * 100;
-	document.getElementById(
-		"content__call-to-action-zone__banner"
-	).style.height = `${Math.max(100, size)}%`;
-
-	document.getElementById(
-		"content__call-to-action-zone__wrapper"
-	).style.height = `${
-		document.getElementById("content__call-to-action-zone__banner")
-			.clientHeight
-	}px`;
 }
 
 // wait, why is this here?
