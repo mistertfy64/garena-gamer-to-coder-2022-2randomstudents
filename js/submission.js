@@ -36,7 +36,7 @@ function createSubmissionBox(data) {
     
     <h3/><h1>${JSON.stringify(
 		data.name
-	)}</h1><img class="icon" src=${JSON.stringify(data.icon)}>
+	)}</h1><img class="icon fade-in-image-ctr" src=${JSON.stringify(data.icon)}>
       <div >
       <span class="submission-box__tags">${cleanString(
 			JSON.stringify(data.genre.join(", "))
@@ -75,7 +75,7 @@ function createSlideshow(data) {
 	let result = document.createElement("div");
 	result.innerHTML = "";
 	for (let i = 0; i < data.images.length; i++) {
-		result.innerHTML += `<img src=${data.images[i]} class="slideshow-image">`;
+		result.innerHTML += `<img src=${data.images[i]} class="slideshow-image fade-in-image">`;
 	}
 
 	return result;

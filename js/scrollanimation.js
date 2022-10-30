@@ -1,5 +1,10 @@
 // Originally created by fireship: https://youtu.be/T33NN_pPeNI
 
+window.onload = function () {
+	fetchaos();
+};
+
+
 const obs = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		let aostype = entry.target.className.split("--");
@@ -19,9 +24,12 @@ const obs = new IntersectionObserver((entries) => {
 	});
 });
 
-const aostypes = ["fade", "slide-left"];
-aostypes.forEach((aos) => {
-	console.log(aos);
-	const hidden = document.querySelectorAll(".hidden--" + aos);
-	hidden.forEach((elem) => obs.observe(elem));
-});
+
+function fetchaos() {
+	const aostypes = ["fade", "slide-left"];
+	aostypes.forEach((aos) => {
+		console.log(aos);
+		const hidden = document.querySelectorAll(".hidden--" + aos);
+		hidden.forEach((elem) => obs.observe(elem));
+	});
+}
