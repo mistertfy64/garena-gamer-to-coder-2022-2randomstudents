@@ -1,14 +1,15 @@
 headerIsVisible = true;
-buttonVisibility = false;
+buttonVisibility = true;
 // document.getElementById("header__content").style.display = "none";
 
 handleNavSize();
 
 window.onresize = function () {
-  handleNavSize();
+	handleNavSize();
 };
 
-function handleNavSize() {
+
+async function handleNavSize() {
   //chek if the device is a mobile device
   if (window.innerWidth < 1100) {
 	if(buttonVisibility)return;
@@ -16,12 +17,14 @@ function handleNavSize() {
     headerIsVisible = false;
     buttonVisibility = true;
     document.getElementById("header__ribbon__container").style.display = "flex";
+	console.log("test2");
   } else {
 	if(!buttonVisibility)return;
     showHeader();
     headerIsVisible = true;
     buttonVisibility = false;
     document.getElementById("header__ribbon__container").style.display = "none";
+	console.log("test1");
   }
 }
 
