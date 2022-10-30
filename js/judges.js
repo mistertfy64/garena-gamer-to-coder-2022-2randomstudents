@@ -45,7 +45,7 @@ function createJudgeSelectBox(data, index) {
 	let box = document.createElement("div");
 	box.innerHTML = `<div class="judge-select-box">
 
-    <img class="fade-in-image" onClick="setDisplayedJudge(${index})" src="${data}" width="50" height="50">
+    <img class="fade-in-image" onClick="setDisplayedJudge(${index})" src="${data}" width="125" height="125">
 
   </div>`;
 	document.getElementById("judge-information--minor").appendChild(box);
@@ -56,7 +56,6 @@ function setDisplayedJudge(index) {
 		JUDGE_INFORMATION[index].name;
 	document.getElementById(
 		"judge-image--main"
-
 	).innerHTML = `<img class="fade-in-image-ctr" src=${JUDGE_INFORMATION[index].imageURI}>`;
 
 	document.getElementById(
