@@ -137,3 +137,9 @@
   align-items: center;
 }
 
+/*  1079px or lower */ 
+@media screen and (max-width: 1079px) {
+  .judge-information, .judge-information.reversed {
+    flex-direction: column;
+  }
+}
