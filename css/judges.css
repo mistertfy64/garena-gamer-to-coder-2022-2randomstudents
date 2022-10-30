@@ -9,7 +9,10 @@
 
 #content-container {
   margin-top:2.5vh;
-}
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+  }
 
 .content__judge-information {
   display:flex;
