@@ -77,13 +77,18 @@ justify-content: center;
 
 #header__content__link__container .header__content__link--active {
   background-color: #03925e;
+  height: 100%;
 }
 
 #header__content__link__container a {
   color: #ffffff;
   text-decoration: none;
+  vertical-align: middle;
 }
 
+#header__content__link a {
+  height: 100%;
+}
 
 #header__ribbon__text {
   color: #ffffff;
