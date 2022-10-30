@@ -9,11 +9,15 @@
 
 #content-container {
   margin-top:2.5vh;
-}
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+  color: #ffffff;
+  }
 
 .content__judge-information {
   display:flex;
-  width: 80%;
+  width: 100%;
   height: 50%;
   justify-content: space-between;
 }
@@ -22,6 +26,10 @@
   background-color: #444444;
   color: #ffffff;
   height: 60vh;
+}
+
+#content__judge-information__name {
+  overflow-wrap:break-word;
 }
 
 #content__judge-information--select {
@@ -38,8 +46,8 @@
 }
 
 .judge-select-box {
-  width: 50px;
-  height: 50px;
+  width: 125px;
+  height: 125px;
   border: 4px #888888 solid;
   border-radius: 4px;
   margin: 2px;
@@ -66,4 +74,58 @@
 
 #content__judge-information__description {
   margin: 8px;
+}
+
+.judge-information {
+  color: #ffffff;
+}
+
+.judge-information {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.judge-information.reversed {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#tag-style--1 {
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg,#d14fd1, #3c3cd8,#d14fd1);
+}
+#tag-style--2 {
+  color:#fff8dc;
+}
+
+#tag-style--3 {
+  color:  #29851d;
+}
+.judge-information__description h2, .judge-information__description h3{
+  margin: 0px;
+  font-weight: normal;
+}
+
+.judge-information__description h2 {
+  font-size: 36px;
+}
+
+.judge-information__description h3 {
+  font-size: 24px;
+}
+
+#judge-information--minor {
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  flex-wrap: wrap;
+}
+
+.judge-select-box {
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }

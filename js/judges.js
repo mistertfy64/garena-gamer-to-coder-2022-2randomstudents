@@ -1,4 +1,8 @@
 const JUDGE_INFORMATION = {};
+const BIG_IMAGE_THRESHOLDS = {
+	width: 1200,
+	height: 700,
+};
 
 function initialize() {
 	getAndRenderData();
@@ -40,11 +44,9 @@ async function getAndRenderData() {
 function createJudgeSelectBox(data, index) {
 	let box = document.createElement("div");
 	box.innerHTML = `<div class="judge-select-box">
-    <img onClick="setDisplayedJudge(${index})" src="${data}" width="50" height="50">
+    <img onClick="setDisplayedJudge(${index})" src="${data}" width="100" height="100">
   </div>`;
-	document
-		.getElementById("content__judge-information--select")
-		.appendChild(box);
+	document.getElementById("judge-information--minor").appendChild(box);
 }
 
 function setDisplayedJudge(index) {
@@ -52,8 +54,9 @@ function setDisplayedJudge(index) {
 		JUDGE_INFORMATION[index].name;
 	document.getElementById(
 		"judge-image--main"
-	).innerHTML = `<img src=${JUDGE_INFORMATION[index].imageURI}>`;
+	).innerHTML = `<img id="judge-image" src=${JUDGE_INFORMATION[index].imageURI}>`;
 	document.getElementById(
 		"content__judge-information__description"
 	).innerText = JUDGE_INFORMATION[index].lore;
+	calibrateJudgeImage();
 }
