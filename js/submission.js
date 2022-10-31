@@ -80,9 +80,15 @@ function createSubmissionInformation(data) {
 // TODO: It's not a slideshow yet, it's just a placeholder.
 function createSlideshow(data) {
 	let result = document.createElement("div");
-	result.innerHTML = "";
-	for (let i = 0; i < data.images.length; i++) {
-		result.innerHTML += `<img src=${data.images[i]} class="slideshow-image fade-in-image">`;
+	if (data.images) {
+		result.innerHTML = "";
+
+		for (let i = 0; i < data.images.length; i++) {
+			result.innerHTML += `<img src=${data.images[i]} class="slideshow-image fade-in-image">`;
+		}
+	} else {
+		result.innerHTML = "";
+		result.innerHTML = "(None.)";
 	}
 
 	return result;
