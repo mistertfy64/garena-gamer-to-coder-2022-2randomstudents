@@ -152,7 +152,12 @@ function calibrateScreen() {
 	document.getElementById(
 		"content__call-to-action-zone__banner"
 	).style.height = `${Math.max(100, size)}%`;
-
+	document.getElementById(
+		"content__call-to-action-zone__banner-wrapper"
+	).style.height = `${
+		document.getElementById("content__call-to-action-zone__banner")
+			.clientHeight
+	}px`;
 	document.getElementById(
 		"content__call-to-action-zone__wrapper"
 	).style.height = `${
