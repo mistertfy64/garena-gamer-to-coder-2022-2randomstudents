@@ -19,6 +19,9 @@ Anyways, while Garena really did give permission to their assets from BlockMan g
 ### Why monospaced text?
 Because there's a 1 billion baht cash prize through this (fictional) competition, the opening should also be good. So I added a splash screen on top of it. This splash screen gives off the "corrupted" text vibe, with characters being replaced. If it wasn't monospaced, the text would just shake as the corrupted characters get replaced in to actual ones.
 
+### Why so many effects?
+I didn't add them, Catto added them. I (and possibly him) personally don't think it's **that** distracting. Also it makes the website look cooler.
+
 ## Acknowledgements
 [Garena Thailand](https://www.garena.co.th/) for hosting this competition.
 
