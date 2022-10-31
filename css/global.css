@@ -67,23 +67,25 @@ left: 80%;
 display:flex;
 flex-direction: row;
 justify-content: center;
-
+  width:100%;
 }
 
-#header__content__link__container .header__content__link {
+#header__content__link__container a {
   margin: 0 1%;
   width: 10%;
   text-align: center;
   vertical-align: middle;
+  width:20%;
 }
 
 #header__content__link__container .header__content__link--active {
-  background-color: #03925e;
+  background-color: #03925e;height: var(--height-top-navigation-bar-height);
 }
 
 #header__content__link__container a {
   color: #ffffff;
   text-decoration: none;
+  height: var(--height-top-navigation-bar-height);
   vertical-align: middle;
 }
 

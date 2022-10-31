@@ -86,7 +86,13 @@
   flex-direction: row;
 
 }
-
+#content-container > div > h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: normal;
+}
 .judge-information.reversed {
   display: flex;
   flex-direction: row-reverse;
@@ -131,3 +137,9 @@
   align-items: center;
 }
 
+/*  1079px or lower */ 
+@media screen and (max-width: 1079px) {
+  .judge-information, .judge-information.reversed {
+    flex-direction: column;
+  }
+}
