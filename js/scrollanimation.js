@@ -9,17 +9,17 @@ const obs = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		let aostype = entry.target.className.split("--");
 		aostype = aostype[aostype.length - 1];
-		console.log(aostype);
+		// console.log(aostype);
 
-		console.log(entry);
+		// console.log(entry);
 		if (entry.isIntersecting) {
 			//show
 			entry.target.classList.add("show--" + aostype);
-			console.log("show: " + entry.target.className);
+			// console.log("show: " + entry.target.className);
 		} else {
 			//remove show
 			entry.target.classList.remove("show--" + aostype);
-			console.log("hide: " + entry.target.className);
+			// console.log("hide: " + entry.target.className);
 		}
 	});
 });

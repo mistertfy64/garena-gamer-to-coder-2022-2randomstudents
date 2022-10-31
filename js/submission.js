@@ -55,11 +55,12 @@ function createSubmissionInformation(data) {
 	let submissionInformation = document.createElement("div");
 	submissionInformation.innerHTML = `
   <div class="submission-information">
-  <h2>Description</h2><br>${cleanString(JSON.stringify(data.description))}
-  <hr>
-  <h2>Images</h2>
-  <br>  
-  <div>
+  <h2>Description</h2><div class="submission-information__text" >${cleanString(
+		JSON.stringify(data.description)
+  )}
+  </div><hr>
+  <h2>Images</h2> 
+  <div class="submission-information__images">
   ${createSlideshow(data).innerHTML}
   </div>
   </div>

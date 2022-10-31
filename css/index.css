@@ -12,6 +12,16 @@
   }
 }
 
+@keyframes flashing-and-breathing {
+  0% {
+    filter:brightness(100%);
+  }
+  100% {
+    filter:brightness(120%);
+  }
+}
+
+
 body {
   overflow-x: hidden;
 }
@@ -43,7 +53,7 @@ body {
 }
 
 #call-to-action-button {
-  background-color: #296ed4;
+  background-color: #1361d5;
   border: #0b66ff solid 4px;
   border-radius: 4px;
   color: #ffffff;
@@ -52,6 +62,13 @@ body {
   padding: 8px;
   font-size: 32px;
   font-family: "Roboto Mono", "monospace";
+}
+
+#call-to-action-button:hover {
+  animation-name: flashing-and-breathing;
+  animation-duration: 1s;
+  animation-play-state:running;
+  animation-play-state:initial;
 }
 
 /* #call-to-action-button:hover {

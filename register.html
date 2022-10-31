@@ -7,12 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2randomstudents</title>
   <link href="./css/global.css" rel="stylesheet" />
-  <link href="./css/submission.css" rel="stylesheet" />
+  <link href="./css/register.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
-  <!-- <script defer src="./js/scrollanimation.js"></script> -->
 </head>
 
 <body>
@@ -33,12 +32,12 @@
               </div>
             </a>
             <a href="./submissions.html">
-              <div id="header__content__text--3" class="header__content__link header__content__link--active">
+              <div id="header__content__text--3" class="header__content__link">
                 <div>Submissions</div>
               </div>
             </a>
             <a href="./register.html">
-              <div id="header__content__text--4" class="header__content__link ">
+              <div id="header__content__text--4" class="header__content__link header__content__link--active">
                 <div>Register</div>
               </div>
             </a>
@@ -57,25 +56,127 @@
       </div>
     </div>
   </div>
-
-  <div id="content-container">
-
-    <div id="content__main">
-      <div id="submission-box__container">
-
-      </div>
-      <div id="submission-information__container">
-
-      </div>
-
-
-    </div>
   </div>
 
-  <br><br>
+  <div id="content-container">
+    <br><br>
+    <div>
+      <h1>
+        Register
+      </h1>
+    </div>
+    <br>
+    <div>
+      <div class="form-section-container">
+        <h3>Personal Information</h3>
+        <br>
+        <div class="form-content">
+          <div class="form-content--text-field-container">
+            <h4>First Name</h4>
+            <input class="form-content--text-field" type="text">
+          </div>
+          <div class="form-content--text-field-container">
+            <h4>Last Name</h4>
+            <input class="form-content--text-field" type="text">
+          </div>
+
+        </div>
+        <br>
+        <div class="form-content">
+          <div class="form-content--text-field-container">
+            <h4>E-mail Address</h4>
+            <input class="form-content--text-field" type="text">
+          </div>
+          <div class="form-content--text-field-container">
+            <h4>Phone Number (optional)</h4>
+            <input class="form-content--text-field" type="text">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="form-section-container">
+        <h3>Account Information</h3>
+        <br>
+        <div class="form-content">
+          <div class="form-content--text-field-container">
+            <h4>Candidate Username</h4>
+            <input class="form-content--text-field" type="text">
+          </div>
+          <div class="form-content--text-field-container">
+            <h4>Candidate's BlockMan Go Username</h4>
+            <input class="form-content--text-field" type="text">
+          </div>
+
+        </div>
+        <br>
+      </div>
+      <br>
+      <div class="form-section-container">
+        <h3>Project Information</h3>
+        <br>
+        <div class="form-content">
+          <div class="form-content--text-field-container">
+            <h4>Project Name</h4>
+            <input class="form-content--text-field" type="text">
+          </div>
+
+
+        </div>
+        <div class="form-content">
+          <div class="form-content--text-field-container">
+            <h4>Project Tag(s)</h4>
+            <input class="form-content--text-field" type="text">
+          </div>
+          <div class="form-content--text-field-container">
+            <h4>Project's Video Description</h4>
+            <input class="form-content--text-field" type="text">
+          </div>
+        </div>
+        <br>
+
+        <div class="form-content">
+          <div class="form-content--text-field-container">
+            <h4>Project Text Description</h4>
+            <input class="form-content--text-field" type="text">
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="form-section-container">
+        <h3>Important</h3>
+        <p>
+          Please read this before continuing!
+          <br>
+          <strong>THIS EVENT DOES NOT ACTUALLY EXIST, AND ITS ACCOMPANYING STORY IS FICTIONAL.</strong>
+          <br>
+          The Register Button also doesn't do anything.
+          <br>
+          Although this work is affiliated with Garena (and one of its creations, BlockMan Go), the content on the
+          webpage is fictional and should not be taken seriously.<br>
+
+          This webpage was created as part of Garena's Gamer to Coder camp/competition, and Garena has explicitly
+          granted permission for the creators of this webpage to use BlockMan Go's assets for use within the webpage.
+          <br>
+          Clicking the button <strong>DOES NOT</strong> send any data to any server. It just redirects you back to the
+          homepage.
+        </p>
+
+      </div>
+
+      <a href="./index.html?ignoreOpeningAnimation=1">
+        <div style="text-align:right;">
+          <button id="call-to-action-button">
+            Register
+          </button>
+        </div>
+      </a>
+    </div>
+    <br>
+  </div>
 
   <!-- TODO: Copy and paste this into every file! -->
-  <div id="footer" style="position:relative">
+  <div id="footer">
     <div style="display:flex;justify-content:center">
       <div style="width:80%">
         <div style="text-align:center">
@@ -125,9 +226,9 @@
     </div>
   </div>
 
-  <script src="./js/submission.js"></script>
+  <script src="./js/register.js"></script>
   <script src="./js/global.js"></script>
-  <script>initialize();</script>
+  <script defer src="./js/scrollanimation.js"></script>
 </body>
 
 </html>

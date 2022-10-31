@@ -5,7 +5,12 @@
   align-items: flex-start;
   min-height: 100vh;
   flex-wrap: wrap;
+  width:80%;
+  margin-left:auto;
+  margin-right: auto;
 }
+
+
 
 #content-container {
   margin-top:15vh;
@@ -18,7 +23,7 @@
 }
 
 #submission-information__container {
-  width: 80%;
+  width: 75%;
   margin: 8px;
 }
 
@@ -34,6 +39,7 @@
 .submission-information {
   background-color: #444444;
   color: #ffffff;
+  width: 100%;
 }
 
 .submission-box h3, .submission-box h1 {
@@ -43,9 +49,13 @@
 }
 
 .submission-information h2 {
-  margin: 0;
   font-weight: normal;
-  }
+  margin: 0 8px;
+}
+.submission-information > .submission-information__text {
+  margin: 0 8px;
+}
+
 
 .submission-box .icon {
   
@@ -58,5 +68,6 @@
 }
 
 .slideshow-image {
-  width: max(20%, 200px);
+  width: max(15%, 200px);
+  margin: 8px;
 }
