@@ -123,7 +123,6 @@ function skipOpeningAnimation() {
 // remove animation so it doesn't break stuff
 async function finishOpeningAnimation() {
 	document.getElementById("content__main").style.display = "block";
-	document.body.style.overflowY = "hidden";
 	let parameters = new URL(document.location).searchParams;
 	let ignoreOpeningAnimation = parameters.get("ignoreOpeningAnimation");
 
