@@ -42,6 +42,10 @@
   width: 100%;
 }
 
+.submission-information__images {
+  margin: 0 8px;  
+}
+
 .submission-box h3, .submission-box h1 {
   text-align: center;
   margin: 0;
