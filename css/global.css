@@ -1,5 +1,5 @@
 :root {
-  --height-top-navigation-bar-height: 4vh; 
+  --height-top-navigation-bar-height: max(4vh, 32px); 
 }
 
 @keyframes header-slide-in {
