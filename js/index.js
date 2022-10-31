@@ -123,6 +123,15 @@ function skipOpeningAnimation() {
 // remove animation so it doesn't break stuff
 async function finishOpeningAnimation() {
 	document.getElementById("content__main").style.display = "block";
+	document.body.style.overflowY = "hidden";
+	let parameters = new URL(document.location).searchParams;
+	let ignoreOpeningAnimation = parameters.get("ignoreOpeningAnimation");
+
+	if (!ignoreOpeningAnimation) {
+		document.getElementById(
+			"content__call-to-action-zone__banner-wrapper"
+		).style.height = `500px`;
+	}
 	calibrateScreen();
 	if (!splashScreenCurrentlyDisappearing) {
 		splashScreenCurrentlyDisappearing = true;
