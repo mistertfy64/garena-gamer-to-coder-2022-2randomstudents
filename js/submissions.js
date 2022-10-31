@@ -24,7 +24,7 @@ async function getAndRenderData() {
 			// handle error
 		})
 		.then((data) => {
-			console.log(data);
+			//console.log(data);
 			data = data;
 			document.getElementById("loading-text").remove();
 			for (let submission of data) {
