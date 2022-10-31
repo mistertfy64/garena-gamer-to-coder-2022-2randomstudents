@@ -42,6 +42,7 @@ function initialize() {
 	if (!ignoreOpeningAnimation) {
 		startOpeningAnimation();
 	} else {
+		document.body.style.overflowY = "scroll";
 		finishOpeningAnimation();
 	}
 	calibrateScreen();
