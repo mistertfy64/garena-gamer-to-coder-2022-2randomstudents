@@ -8,26 +8,6 @@ window.onresize = function () {
 	handleNavSize();
 };
 
-<<<<<<< HEAD
-
-async function handleNavSize() {
-  //chek if the device is a mobile device
-  if (window.innerWidth < 1100) {
-	if(buttonVisibility)return;
-    hideHeader();
-    headerIsVisible = false;
-    buttonVisibility = true;
-    document.getElementById("header__ribbon__container").style.display = "flex";
-	console.log("test2");
-  } else {
-	if(!buttonVisibility)return;
-    showHeader();
-    headerIsVisible = true;
-    buttonVisibility = false;
-    document.getElementById("header__ribbon__container").style.display = "none";
-	console.log("test1");
-  }
-=======
 function handleNavSize() {
 	//check if the device is a mobile device
 	if (window.innerWidth < 1100) {
@@ -56,7 +36,6 @@ function handleNavSize() {
 		document.getElementById("header__ribbon__container").style.display =
 			"flex";
 	}
->>>>>>> mistertfy64/development
 }
 
 function toggleHeaderVisibility() {
