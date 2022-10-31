@@ -1,5 +1,5 @@
 headerIsVisible = true;
-buttonVisibility = false;
+buttonVisibility = true;
 // document.getElementById("header__content").style.display = "none";
 
 handleNavSize();
