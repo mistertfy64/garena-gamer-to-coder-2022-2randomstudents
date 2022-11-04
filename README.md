@@ -1,3 +1,11 @@
+# Garena Gamer to Coder 2022 Submission (Team #246)
+
+Made public for public interest.
+
+Original `README.md` text below the line of equal signs.
+
+=============================================================
+
 # Essay on my (mistertfy64)'s thought process for design and content choices + Acknowledgements.
 
 ## Content
