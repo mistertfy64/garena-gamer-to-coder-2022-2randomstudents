@@ -1,5 +1,7 @@
 # Garena Gamer to Coder 2022 Submission (Team #246)
 
+## THIS PROJECT GOT US 4,000 BAHT
+
 Made public for public interest.
 
 Original `README.md` text below the line of equal signs.
