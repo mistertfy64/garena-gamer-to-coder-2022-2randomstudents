@@ -1,10 +1,13 @@
 # Garena Gamer to Coder 2022 Submission (Team #246)
 
-## THIS PROJECT GOT US 4,000 BAHT
+## THIS PROJECT WON AN AWARD!!!
+
+This is a submission to Garena's Gamer to Coder Contest.
+On 2022-11-11, it has been revealed that this project won the consolation prize (4th place to 10th place), winning its creators ([mistertfy64](https://github.com/mistertfy64) and [EpicCatto](https://github.com/EpicCatto)) a THB4,000 (USD111 as of 2022-11-12) prize!
 
 Made public for public interest.
 
-Original `README.md` text below the line of equal signs.
+Original `README.md` text below the line of equal signs (Written on 2022-10-31)
 
 =============================================================
 
